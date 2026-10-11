@@ -13,25 +13,25 @@ Thank you for the opportunity to complete this trial assessment for the WordPres
 
 Below are the deliverables and details of my submission:
 
-1. Live Demo URL: [MASUKKAN URL LIVE ANDA, misal: https://growmodo-trial.infinityfreeapp.com atau https://yourname.wasmer.app]
-2. GitHub Repository: [MASUKKAN LINK GITHUB, misal: https://github.com/username/growmodo-wp-theme]
-3. Admin Access (Read-Only/Reviewer, jika diperlukan):
-   - URL: [URL LIVE]/wp-admin
-   - Username: [USERNAME DEMO]
-   - Password: [PASSWORD DEMO]
+1. Live Demo URL: http://103.117.57.52/
+2. GitHub Repository: https://github.com/tovankamil/growmodo
+3. Admin Access (Reviewer Credentials):
+   - URL: http://103.117.57.52/wp-admin
+   - Username: admin
+   - Password: T0v4n.kamil
 
 Brief Overview:
-- Theme Type: 100% Custom WordPress Theme built from scratch (Clean PHP, Modular SCSS/CSS, Vanilla JS).
-- Focus Area: Completed the core layout with pixel-perfect design fidelity (Header/Navigation, Hero Section, Featured Content/Services, Dynamic Loop/Blog preview, and Global Footer).
-- Responsiveness: Fully verified and fluid across Mobile (375px+), Tablet (768px), and Desktop (1200px+).
-- Architecture: Zero page-builder bloat; structured with modular template parts and native WordPress hooks/ACF for client maintainability.
+- Theme Type: 100% Custom WordPress Theme (Estatein) built from scratch (Clean PHP 8+, Modular CSS Tokens, Vanilla ES6 JS).
+- Focus Area: Completed the core layout with pixel-perfect design fidelity from Figma (Dismissible Announcement Header, Hero Section with rotating badge, Value Proposition Grid, Featured Properties Carousel, Client Testimonials, FAQ Accordion, and Global Footer).
+- Responsiveness: Fully verified and fluid across Mobile (375px-500px), Tablet (768px), and Desktop (1200px+).
+- Architecture: Zero page-builder bloat (No Elementor/Divi); structured with modular template parts, Custom Post Types (Properties, Testimonials, FAQ), and native WordPress metaboxes with ACF fallback.
+- Database & Deployment: Hosted live on VPS (AlmaLinux 10 + Nginx + PHP 8.3 + MariaDB) with automated GitHub Actions CI/CD deployment pipeline.
 
 Attached below is the full technical documentation detailing the architecture, implementation choices, and performance optimizations.
 
 Best regards,
-[Nama Anda]
-[Email Anda]
-[LinkedIn Profile]
+Tovan Kamil
+tovan.kamil@gmail.com
 
 
 ```
