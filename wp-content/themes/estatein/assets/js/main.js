@@ -190,4 +190,159 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // 6. Properties Catalogue Live Search & Filters
+  const searchInput = document.getElementById('propSearchInput');
+  const searchBtn = document.getElementById('propSearchSubmitBtn');
+  const filterLocation = document.getElementById('filterLocation');
+  const filterType = document.getElementById('filterType');
+  const filterPrice = document.getElementById('filterPrice');
+  const filterSize = document.getElementById('filterSize');
+  const filterYear = document.getElementById('filterYear');
+  const catalogueCards = document.querySelectorAll('.catalogue-card');
+
+  function applyPropertyFilters() {
+    const query = (searchInput ? searchInput.value.toLowerCase().trim() : '');
+    const loc = (filterLocation ? filterLocation.value.toLowerCase() : '');
+    const type = (filterType ? filterType.value.toLowerCase() : '');
+    const price = (filterPrice ? filterPrice.value.toLowerCase() : '');
+    const size = (filterSize ? filterSize.value.toLowerCase() : '');
+    const year = (filterYear ? filterYear.value.toLowerCase() : '');
+
+    let visibleCount = 0;
+    catalogueCards.forEach(card => {
+      const cardTitle = card.getAttribute('data-title') || '';
+      const cardLoc = card.getAttribute('data-location') || '';
+      const cardType = card.getAttribute('data-type') || '';
+      const cardPrice = card.getAttribute('data-price') || '';
+      const cardSize = card.getAttribute('data-size') || '';
+      const cardYear = card.getAttribute('data-year') || '';
+
+      const matchesQuery = !query || cardTitle.includes(query);
+      const matchesLoc = !loc || cardLoc.includes(loc);
+      const matchesType = !type || cardType === type;
+      const matchesPrice = !price || cardPrice === price;
+      const matchesSize = !size || cardSize === size;
+      const matchesYear = !year || cardYear.includes(year);
+
+      if (matchesQuery && matchesLoc && matchesType && matchesPrice && matchesSize && matchesYear) {
+        card.style.display = '';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    const pageCounter = document.getElementById('catalogueCurrentPage');
+    if (pageCounter) {
+      pageCounter.textContent = visibleCount > 0 ? '01' : '00';
+    }
+  }
+
+  if (searchInput) searchInput.addEventListener('input', applyPropertyFilters);
+  if (searchBtn) searchBtn.addEventListener('click', applyPropertyFilters);
+  if (filterLocation) filterLocation.addEventListener('change', applyPropertyFilters);
+  if (filterType) filterType.addEventListener('change', applyPropertyFilters);
+  if (filterPrice) filterPrice.addEventListener('change', applyPropertyFilters);
+  if (filterSize) filterSize.addEventListener('change', applyPropertyFilters);
+  if (filterYear) filterYear.addEventListener('change', applyPropertyFilters);
+
+  // 7. Preferred Contact Method Radio Cards
+  const methodRadioCards = document.querySelectorAll('.method-radio-card');
+  methodRadioCards.forEach(card => {
+    card.addEventListener('click', () => {
+      methodRadioCards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+      const radio = card.querySelector('input[type="radio"]');
+      if (radio) radio.checked = true;
+    });
+  });
+
+  // 8. Property Detail Interactive Photo Gallery
+  const galleryThumbs = document.querySelectorAll('.gallery-thumb-btn');
+  const mainImg1 = document.getElementById('galleryMainImg1');
+  const mainImg2 = document.getElementById('galleryMainImg2');
+  const galleryDashes = document.querySelectorAll('.gallery-dash');
+  const galleryPrev = document.getElementById('galleryPrevBtn');
+  const galleryNext = document.getElementById('galleryNextBtn');
+
+  if (galleryThumbs.length > 0 && mainImg1 && mainImg2) {
+    let currentSlide = 0;
+    const thumbImages = Array.from(galleryThumbs).map(btn => {
+      const img = btn.querySelector('img');
+      return img ? img.getAttribute('src') : '';
+    });
+
+    function showGallerySlide(index) {
+      currentSlide = (index + thumbImages.length) % thumbImages.length;
+      const nextIndex = (currentSlide + 1) % thumbImages.length;
+
+      mainImg1.src = thumbImages[currentSlide];
+      mainImg2.src = thumbImages[nextIndex];
+
+      galleryThumbs.forEach((btn, idx) => {
+        btn.classList.toggle('active', idx === currentSlide);
+      });
+
+      if (galleryDashes.length > 0) {
+        const dashIndex = currentSlide % galleryDashes.length;
+        galleryDashes.forEach((dash, idx) => {
+          dash.classList.toggle('active', idx === dashIndex);
+        });
+      }
+    }
+
+    galleryThumbs.forEach((btn, idx) => {
+      btn.addEventListener('click', () => showGallerySlide(idx));
+    });
+
+    if (galleryPrev) {
+      galleryPrev.addEventListener('click', () => showGallerySlide(currentSlide - 1));
+    }
+    if (galleryNext) {
+      galleryNext.addEventListener('click', () => showGallerySlide(currentSlide + 1));
+    }
+  }
+
+  // 9. Office Location Category Filter Tabs
+  const officeTabs = document.querySelectorAll('.office-tab-btn');
+  const officeCards = document.querySelectorAll('.office-card');
+
+  officeTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      officeTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const selectedCat = tab.getAttribute('data-category');
+
+      officeCards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        if (selectedCat === 'all' || cardCat === selectedCat) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
 });
+
+// Global Form Submission Handler
+window.handleEstateinSubmit = function(form) {
+  const submitBtn = form.querySelector('.btn-submit-form');
+  if (submitBtn) {
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Message Sent Successfully! ✓';
+    submitBtn.style.backgroundColor = '#10b981';
+    submitBtn.style.borderColor = '#10b981';
+    submitBtn.disabled = true;
+
+    setTimeout(() => {
+      form.reset();
+      submitBtn.textContent = originalText;
+      submitBtn.style.backgroundColor = '';
+      submitBtn.style.borderColor = '';
+      submitBtn.disabled = false;
+    }, 3000);
+  }
+};
+

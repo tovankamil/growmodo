@@ -60,14 +60,14 @@
           <ul class="nav-menu" id="navMenu">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="nav-link <?php echo is_front_page() ? 'active' : ''; ?>"><?php esc_html_e( 'Home', 'estatein' ); ?></a></li>
             <li><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="nav-link <?php echo ( is_page( array( 'about', 'about-us' ) ) || is_page_template( 'template-about.php' ) ) ? 'active' : ''; ?>"><?php esc_html_e( 'About Us', 'estatein' ); ?></a></li>
-            <li><a href="<?php echo esc_url( home_url( '/#properties' ) ); ?>" class="nav-link"><?php esc_html_e( 'Properties', 'estatein' ); ?></a></li>
-            <li><a href="<?php echo esc_url( home_url( '/#services' ) ); ?>" class="nav-link"><?php esc_html_e( 'Services', 'estatein' ); ?></a></li>
-            <li class="mobile-only-nav-item"><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>" class="btn btn-primary btn-full"><?php esc_html_e( 'Contact Us', 'estatein' ); ?></a></li>
+            <li><a href="<?php echo esc_url( home_url( '/properties/' ) ); ?>" class="nav-link <?php echo ( is_page( 'properties' ) || is_page_template( 'template-properties.php' ) || is_singular( 'estatein_property' ) ) ? 'active' : ''; ?>"><?php esc_html_e( 'Properties', 'estatein' ); ?></a></li>
+            <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>" class="nav-link <?php echo ( is_page( 'services' ) || is_page_template( 'template-services.php' ) ) ? 'active' : ''; ?>"><?php esc_html_e( 'Services', 'estatein' ); ?></a></li>
+            <li class="mobile-only-nav-item"><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary btn-full"><?php esc_html_e( 'Contact Us', 'estatein' ); ?></a></li>
           </ul>
         <?php endif; ?>
 
         <div class="nav-actions">
-          <a href="#contact" class="btn btn-secondary desktop-contact-btn"><?php esc_html_e( 'Contact Us', 'estatein' ); ?></a>
+          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn <?php echo ( is_page( array( 'contact', 'contact-us' ) ) || is_page_template( 'template-contact.php' ) ) ? 'btn-primary' : 'btn-secondary'; ?> desktop-contact-btn"><?php esc_html_e( 'Contact Us', 'estatein' ); ?></a>
           <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="<?php esc_attr_e( 'Toggle navigation menu', 'estatein' ); ?>" aria-expanded="false">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="3" y1="6" x2="21" y2="6"></line>

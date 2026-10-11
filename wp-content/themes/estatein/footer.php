@@ -17,7 +17,7 @@
               <?php esc_html_e( "Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.", 'estatein' ); ?>
             </p>
           </div>
-          <a href="#properties" class="btn btn-primary cta-btn"><?php esc_html_e( 'Explore Properties', 'estatein' ); ?></a>
+          <a href="<?php echo esc_url( home_url( '/properties/' ) ); ?>" class="btn btn-primary cta-btn"><?php esc_html_e( 'Explore Properties', 'estatein' ); ?></a>
         </div>
       </div>
     </section>
@@ -54,11 +54,11 @@
             <div class="footer-col footer-col-home">
               <h4 class="footer-col-title"><?php esc_html_e( 'Home', 'estatein' ); ?></h4>
               <ul class="footer-links">
-                <li><a href="#hero"><?php esc_html_e( 'Hero Section', 'estatein' ); ?></a></li>
-                <li><a href="#services"><?php esc_html_e( 'Features', 'estatein' ); ?></a></li>
-                <li><a href="#properties"><?php esc_html_e( 'Properties', 'estatein' ); ?></a></li>
-                <li><a href="#testimonials"><?php esc_html_e( 'Testimonials', 'estatein' ); ?></a></li>
-                <li><a href="#faq"><?php esc_html_e( 'FAQ’s', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'Hero Section', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/#services' ) ); ?>"><?php esc_html_e( 'Features', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/properties/' ) ); ?>"><?php esc_html_e( 'Properties', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/#testimonials' ) ); ?>"><?php esc_html_e( 'Testimonials', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/#faq' ) ); ?>"><?php esc_html_e( 'FAQ’s', 'estatein' ); ?></a></li>
               </ul>
             </div>
 
@@ -66,8 +66,8 @@
             <div class="footer-col footer-col-properties">
               <h4 class="footer-col-title"><?php esc_html_e( 'Properties', 'estatein' ); ?></h4>
               <ul class="footer-links">
-                <li><a href="#properties"><?php esc_html_e( 'Portfolio', 'estatein' ); ?></a></li>
-                <li><a href="#properties"><?php esc_html_e( 'Categories', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/properties/' ) ); ?>"><?php esc_html_e( 'Portfolio', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/properties/' ) ); ?>"><?php esc_html_e( 'Categories', 'estatein' ); ?></a></li>
               </ul>
             </div>
 
@@ -75,8 +75,8 @@
             <div class="footer-col footer-col-contact">
               <h4 class="footer-col-title"><?php esc_html_e( 'Contact Us', 'estatein' ); ?></h4>
               <ul class="footer-links">
-                <li><a href="#contact"><?php esc_html_e( 'Contact Form', 'estatein' ); ?></a></li>
-                <li><a href="#contact"><?php esc_html_e( 'Our Offices', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Contact Form', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Our Offices', 'estatein' ); ?></a></li>
               </ul>
             </div>
           </div>
@@ -86,11 +86,11 @@
             <div class="footer-col footer-col-about">
               <h4 class="footer-col-title"><?php esc_html_e( 'About Us', 'estatein' ); ?></h4>
               <ul class="footer-links">
-                <li><a href="#about"><?php esc_html_e( 'Our Story', 'estatein' ); ?></a></li>
-                <li><a href="#about"><?php esc_html_e( 'Our Works', 'estatein' ); ?></a></li>
-                <li><a href="#about"><?php esc_html_e( 'How It Works', 'estatein' ); ?></a></li>
-                <li><a href="#about"><?php esc_html_e( 'Our Team', 'estatein' ); ?></a></li>
-                <li><a href="#about"><?php esc_html_e( 'Our Clients', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'Our Story', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'Our Works', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'How It Works', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/about/#team' ) ); ?>"><?php esc_html_e( 'Our Team', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/about/#clients' ) ); ?>"><?php esc_html_e( 'Our Clients', 'estatein' ); ?></a></li>
               </ul>
             </div>
 
@@ -98,11 +98,11 @@
             <div class="footer-col footer-col-services">
               <h4 class="footer-col-title"><?php esc_html_e( 'Services', 'estatein' ); ?></h4>
               <ul class="footer-links">
-                <li><a href="#services"><?php esc_html_e( 'Valuation Mastery', 'estatein' ); ?></a></li>
-                <li><a href="#services"><?php esc_html_e( 'Strategic Marketing', 'estatein' ); ?></a></li>
-                <li><a href="#services"><?php esc_html_e( 'Negotiation Wizardry', 'estatein' ); ?></a></li>
-                <li><a href="#services"><?php esc_html_e( 'Closing Success', 'estatein' ); ?></a></li>
-                <li><a href="#services"><?php esc_html_e( 'Property Management', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'Valuation Mastery', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'Strategic Marketing', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'Negotiation Wizardry', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'Closing Success', 'estatein' ); ?></a></li>
+                <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"><?php esc_html_e( 'Property Management', 'estatein' ); ?></a></li>
               </ul>
             </div>
           </div>
