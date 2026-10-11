@@ -1,0 +1,59 @@
+name: Deploy Estatein WordPress Theme to VPS
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to VPS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🔑 Configure SSH Key & Known Hosts
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p ${{ secrets.VPS_PORT || '22' }} -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
+
+      - name: 🚀 Ensure Target Directory Exists on VPS
+        run: |
+          ssh -p ${{ secrets.VPS_PORT || '22' }} -i ~/.ssh/deploy_key ${{ secrets.VPS_USERNAME }}@${{ secrets.VPS_HOST }} \
+            "mkdir -p ${{ secrets.VPS_TARGET_DIR }}"
+
+      - name: 📦 Sync Theme Files to VPS via Rsync
+        run: |
+          rsync -avz --delete \
+            -e "ssh -p ${{ secrets.VPS_PORT || '22' }} -i ~/.ssh/deploy_key" \
+            --exclude '.git*' \
+            --exclude '.github*' \
+            --exclude 'docs*' \
+            --exclude 'html*' \
+            wp-content/themes/estatein/ \
+            ${{ secrets.VPS_USERNAME }}@${{ secrets.VPS_HOST }}:${{ secrets.VPS_TARGET_DIR }}/
+
+      - name: 🔒 Set Proper File Permissions on VPS
+        run: |
+          ssh -p ${{ secrets.VPS_PORT || '22' }} -i ~/.ssh/deploy_key ${{ secrets.VPS_USERNAME }}@${{ secrets.VPS_HOST }} "
+            if [ -d '${{ secrets.VPS_TARGET_DIR }}' ]; then
+              chown -R www-data:www-data ${{ secrets.VPS_TARGET_DIR }} 2>/dev/null || true
+              find ${{ secrets.VPS_TARGET_DIR }} -type d -exec chmod 755 {} \;
+              find ${{ secrets.VPS_TARGET_DIR }} -type f -exec chmod 644 {} \;
+            fi
+          "
+
+      - name: ⚡ Flush WordPress Cache (if WP-CLI available)
+        run: |
+          ssh -p ${{ secrets.VPS_PORT || '22' }} -i ~/.ssh/deploy_key ${{ secrets.VPS_USERNAME }}@${{ secrets.VPS_HOST }} "
+            if command -v wp >/dev/null 2>&1; then
+              WP_ROOT=\$(dirname \$(dirname \$(dirname ${{ secrets.VPS_TARGET_DIR }})))
+              if [ -f \"\$WP_ROOT/wp-config.php\" ]; then
+                wp cache flush --path=\"\$WP_ROOT\" --allow-root || true
+              fi
+            fi
+          "

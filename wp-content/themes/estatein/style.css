@@ -1,0 +1,17 @@
+/*
+Theme Name: Estatein
+Theme URI: https://github.com/growmodo-trial/estatein
+Author: Growmodo Assessment Candidate
+Author URI: https://growmodo.com
+Description: Custom WordPress Dark Theme for Estatein Real Estate, built 100% from scratch with pure semantic HTML, vanilla CSS, and vanilla JS for extreme speed, accessibility, and pixel-perfect design fidelity.
+Version: 1.0.0
+Tested up to: 6.7
+Requires at least: 6.0
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: estatein
+Tags: dark-mode, custom-theme, real-estate, responsive-layout, translation-ready, accessibility-ready
+*/
+
+/* Core theme styles are modularly enqueued from assets/css/style_guide.css and assets/css/global.css */

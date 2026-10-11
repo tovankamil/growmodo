@@ -1,0 +1,39 @@
+# Dependency & Environment Files
+node_modules/
+vendor/
+
+# Local static prototype (Strictly kept local as requested)
+html/
+
+# System and IDE Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# WordPress Core Files (Do not commit WP Core to theme repo)
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/xmlrpc.php
+/license.txt
+/readme.html
+/index.php
+wp-config.php
+wp-config-sample.php
+
+# WordPress Content Bloat, Plugins, Database, & Default Themes
+wp-content/uploads/
+wp-content/cache/
+wp-content/plugins/
+wp-content/database/
+wp-content/pg4wp/
+wp-content/upgrade/
+wp-content/languages/
+wp-content/db.php
+wp-content/themes/twenty*
+*.sqlite
+*.db
+*.zip
+*.tar.gz

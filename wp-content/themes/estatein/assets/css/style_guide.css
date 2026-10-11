@@ -1,0 +1,100 @@
+/* ==========================================================================
+   ESTATEIN DESIGN SYSTEM - STYLE GUIDE TOKENS
+   Figma Source: Estatein Real Estate UI Kit
+   ========================================================================== */
+
+:root {
+  /* Absolute Colors */
+  --absolutewhite: #ffffff;
+  --absoluteblack: #000000;
+
+  /* Purple Shades (Primary Brand) */
+  --purple-60: #703bf7; /* Primary CTA & Brand Accent */
+  --purple-65: #8254f8; /* Hover state */
+  --purple-70: #946cf9; /* Light accent */
+  --purple-75: #a685fa;
+  --purple-90: #dbcefd;
+  --purple-95: #ede7fe;
+  --purple-97: #f4f0fe;
+  --purple-99: #fbfaff;
+
+  /* Grey Shades (Dark Theme Core) */
+  --grey-08: #141414; /* Deep Page Background */
+  --grey-10: #1a1a1a; /* Card, Header & Section Background */
+  --grey-12: #1e1e1e; /* Elevated Cards */
+  --grey-15: #262626; /* Primary Border */
+  --grey-20: #333333; /* Hover Border */
+  --grey-30: #4d4d4d; /* Muted Elements */
+  --grey-40: #666666; /* Subtitle / Placeholder */
+  --grey-50: #808080; /* Secondary Text */
+  --grey-60: #999999; /* Primary Body Text */
+  --grey-70: #b3b3b3;
+  --grey-80: #cccccc;
+
+  /* White Shades */
+  --white-90: #e4e4e7;
+  --white-95: #f1f1f3;
+  --white-97: #f7f7f8;
+  --white-99: #fcfcfd;
+
+  /* Typography */
+  --font-family: 'Urbanist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Font Sizes */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 38px;
+  --text-5xl: 48px;
+  --text-6xl: 60px;
+
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.6;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Border Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-pill: 28px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadows & Glows */
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0 8px 30px rgba(0, 0, 0, 0.5);
+  --glow-purple: 0 0 35px rgba(112, 59, 247, 0.25);
+  --glow-purple-lg: 0 0 60px rgba(112, 59, 247, 0.35);
+
+  /* Layout */
+  --container-max-width: 1596px;
+  --container-padding: 24px;
+}
