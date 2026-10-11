@@ -657,6 +657,24 @@ button:focus-visible, a:focus-visible {
    ========================================================================== */
 .carousel-wrapper {
   width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.properties-page-slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
 .properties-grid {
@@ -846,6 +864,15 @@ button:focus-visible, a:focus-visible {
 /* ==========================================================================
    TESTIMONIALS SECTION
    ========================================================================== */
+.testimonials-page-slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -948,6 +975,15 @@ button:focus-visible, a:focus-visible {
 /* ==========================================================================
    FAQ SECTION
    ========================================================================== */
+.faq-page-slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
 .faq-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1568,6 +1604,13 @@ button:focus-visible, a:focus-visible {
     width: 100%;
   }
 
+  .properties-page-slide,
+  .testimonials-page-slide,
+  .faq-page-slide {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
   .property-card,
   .testimonial-card,
   .faq-card {
@@ -2132,6 +2175,23 @@ button:focus-visible, a:focus-visible {
 
 .about-clients-wrapper {
   width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+}
+
+.about-clients-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.clients-page-slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(20px, 2.5vw, 30px);
 }
 
 .about-clients-grid {
@@ -2371,7 +2431,8 @@ button:focus-visible, a:focus-visible {
   }
 
   /* Clients Mobile */
-  .about-clients-grid {
+  .about-clients-grid,
+  .clients-page-slide {
     grid-template-columns: 1fr;
     gap: 20px;
   }

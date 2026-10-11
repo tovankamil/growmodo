@@ -59,78 +59,85 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Carousel & Pagination Controller (Seamless Mobile Swipe & Arrow Support)
-  function setupCarousel(sliderId, prevBtnId, nextBtnId, counterId, totalItems) {
-    const slider = document.getElementById(sliderId);
+  // 3. Multi-Page Carousel & Pagination Controller (Clients, Properties, Testimonials, FAQs, Catalogue)
+  function setupTrackSlider(trackId, prevBtnId, nextBtnId, counterId, totalPages) {
+    const track = document.getElementById(trackId);
     const prevBtn = document.getElementById(prevBtnId);
     const nextBtn = document.getElementById(nextBtnId);
     const counter = document.getElementById(counterId);
-    let currentIndex = 0;
+    if (!track) return;
 
-    function updateCounter(index) {
-      currentIndex = index;
+    const slides = track.children;
+    const numPages = totalPages || (slides.length > 0 ? slides.length : 10);
+    let currentPage = 0;
+
+    function update() {
+      track.style.transform = `translateX(-${currentPage * 100}%)`;
       if (counter) {
-        const paddedCurrent = String(currentIndex + 1).padStart(2, '0');
-        const paddedTotal = String(totalItems).padStart(2, '0');
-        counter.innerHTML = `<span class="current-page text-white">${paddedCurrent}</span> of ${paddedTotal}`;
+        const paddedCurrent = String(currentPage + 1).padStart(2, '0');
+        const paddedTotal = String(numPages).padStart(2, '0');
+        const currentEl = counter.querySelector('.current-page') || counter.querySelector('strong') || counter.querySelector('.current-client-page');
+        if (currentEl) {
+          currentEl.textContent = paddedCurrent;
+        } else {
+          counter.innerHTML = `<strong class="text-white current-page">${paddedCurrent}</strong> of ${paddedTotal}`;
+        }
       }
-      if (prevBtn) prevBtn.disabled = currentIndex === 0;
-      if (nextBtn) nextBtn.disabled = currentIndex >= totalItems - 1;
+      if (prevBtn) {
+        prevBtn.disabled = currentPage === 0;
+        prevBtn.style.opacity = currentPage === 0 ? '0.35' : '1';
+        prevBtn.style.cursor = currentPage === 0 ? 'not-allowed' : 'pointer';
+      }
+      if (nextBtn) {
+        nextBtn.disabled = currentPage >= numPages - 1;
+        nextBtn.style.opacity = currentPage >= numPages - 1 ? '0.35' : '1';
+        nextBtn.style.cursor = currentPage >= numPages - 1 ? 'not-allowed' : 'pointer';
+      }
     }
 
-    if (slider && prevBtn && nextBtn) {
-      const cards = slider.children;
-      const cardCount = cards.length;
-
-      // Click Next
+    if (nextBtn) {
       nextBtn.addEventListener('click', () => {
-        if (currentIndex < cardCount - 1) {
-          currentIndex++;
-          const targetCard = cards[currentIndex];
-          if (targetCard) {
-            targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-          }
-          updateCounter(currentIndex);
+        if (currentPage < numPages - 1) {
+          currentPage++;
+          update();
         }
       });
-
-      // Click Prev
-      prevBtn.addEventListener('click', () => {
-        if (currentIndex > 0) {
-          currentIndex--;
-          const targetCard = cards[currentIndex];
-          if (targetCard) {
-            targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-          }
-          updateCounter(currentIndex);
-        }
-      });
-
-      // Listen to native touch scroll-snap on mobile
-      let scrollTimeout;
-      const carouselWrapper = slider.closest('.carousel-wrapper');
-      if (carouselWrapper) {
-        carouselWrapper.addEventListener('scroll', () => {
-          clearTimeout(scrollTimeout);
-          scrollTimeout = setTimeout(() => {
-            const scrollLeft = carouselWrapper.scrollLeft;
-            const cardWidth = cards[0] ? cards[0].offsetWidth : carouselWrapper.offsetWidth;
-            const newIndex = Math.min(cardCount - 1, Math.max(0, Math.round(scrollLeft / cardWidth)));
-            if (newIndex !== currentIndex) {
-              updateCounter(newIndex);
-            }
-          }, 60);
-        }, { passive: true });
-      }
     }
 
-    updateCounter(0);
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        if (currentPage > 0) {
+          currentPage--;
+          update();
+        }
+      });
+    }
+
+    // Touch swipe support for mobile
+    let touchStartX = 0;
+    track.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    track.addEventListener('touchend', (e) => {
+      const touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 45 && currentPage < numPages - 1) {
+        currentPage++;
+        update();
+      } else if (touchEndX - touchStartX > 45 && currentPage > 0) {
+        currentPage--;
+        update();
+      }
+    }, { passive: true });
+
+    update();
   }
 
-  setupCarousel('propertiesSlider', 'propPrevBtn', 'propNextBtn', 'propPaginationCounter', 3);
-  setupCarousel('testimonialsSlider', 'testPrevBtn', 'testNextBtn', 'testPaginationCounter', 3);
-  setupCarousel('faqSlider', 'faqPrevBtn', 'faqNextBtn', 'faqPaginationCounter', 3);
-  setupCarousel('clientsSlider', 'clientPrevBtn', 'clientNextBtn', 'clientsPaginationCounter', 10);
+  // Bind all 5 interactive multi-page sliders
+  setupTrackSlider('clientsTrack', 'clientPrevBtn', 'clientNextBtn', 'clientsPaginationCounter', 10);
+  setupTrackSlider('propertiesTrack', 'propPrevBtn', 'propNextBtn', 'propertiesCounter', 10);
+  setupTrackSlider('testimonialsTrack', 'testPrevBtn', 'testNextBtn', 'testPaginationCounter', 10);
+  setupTrackSlider('faqTrack', 'faqPrevBtn', 'faqNextBtn', 'faqPaginationCounter', 10);
+  setupTrackSlider('catalogueTrack', 'propCataloguePrev', 'propCatalogueNext', 'cataloguePageNum', 10);
 
   // 3b. Team Greeting Direct Send Button
   const teamSendButtons = document.querySelectorAll('.team-send-btn');
