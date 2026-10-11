@@ -130,6 +130,25 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCarousel('propertiesSlider', 'propPrevBtn', 'propNextBtn', 'propPaginationCounter', 3);
   setupCarousel('testimonialsSlider', 'testPrevBtn', 'testNextBtn', 'testPaginationCounter', 3);
   setupCarousel('faqSlider', 'faqPrevBtn', 'faqNextBtn', 'faqPaginationCounter', 3);
+  setupCarousel('clientsSlider', 'clientPrevBtn', 'clientNextBtn', 'clientsPaginationCounter', 10);
+
+  // 3b. Team Greeting Direct Send Button
+  const teamSendButtons = document.querySelectorAll('.team-send-btn');
+  teamSendButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const chatBar = btn.closest('.team-chat-bar');
+      const chatText = chatBar ? chatBar.querySelector('.team-chat-text') : null;
+      if (chatText) {
+        const originalText = chatText.textContent;
+        chatText.textContent = 'Greeting Sent! 🚀';
+        btn.style.backgroundColor = '#10b981';
+        setTimeout(() => {
+          chatText.textContent = originalText;
+          btn.style.backgroundColor = '';
+        }, 2200);
+      }
+    });
+  });
 
   // 4. FAQ Card Read More Toggle
   const faqButtons = document.querySelectorAll('.faq-toggle-btn');

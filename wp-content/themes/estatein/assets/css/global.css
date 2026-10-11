@@ -1740,3 +1740,652 @@ button:focus-visible, a:focus-visible {
     align-items: stretch;
   }
 }
+
+/* ==========================================================================
+   ABOUT US PAGE - PIXEL-PERFECT FIGMA & REFERENCE VIDEO STYLING
+   ========================================================================== */
+
+/* 1. About Hero Section (Our Journey) */
+.about-hero-section {
+  padding-top: clamp(40px, 5vw, 80px);
+  padding-bottom: clamp(60px, 7vw, 100px);
+  position: relative;
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+}
+
+.about-hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-hero-content .section-sparkle {
+  margin-bottom: 16px;
+}
+
+.about-hero-content .section-title {
+  margin-bottom: 16px;
+}
+
+.about-hero-content .section-subtitle {
+  margin-bottom: 40px;
+}
+
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.about-stat-card {
+  background-color: var(--grey-10);
+  border: 1px solid var(--grey-15);
+  border-radius: var(--radius-lg);
+  padding: clamp(16px, 1.8vw, 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about-stat-num {
+  font-size: clamp(28px, 2.5vw, 38px);
+  font-weight: 700;
+  color: var(--absolutewhite);
+  line-height: 1.2;
+}
+
+.about-stat-label {
+  font-size: clamp(13px, 1vw, 15px);
+  color: var(--grey-60);
+  font-weight: 500;
+}
+
+.about-hero-visual {
+  position: relative;
+  width: 100%;
+}
+
+.about-hero-image-card {
+  background-color: var(--grey-10);
+  border: 1px solid var(--grey-15);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  box-shadow: var(--shadow-card);
+}
+
+.about-hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* 2. Our Values Section */
+.about-values-section {
+  padding-top: clamp(60px, 7vw, 100px);
+  padding-bottom: clamp(60px, 7vw, 100px);
+}
+
+.about-values-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+}
+
+.about-values-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-values-box {
+  background-color: var(--grey-10);
+  border: 1px solid var(--grey-15);
+  border-radius: var(--radius-xl);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.about-values-box .value-item {
+  padding: clamp(24px, 2.5vw, 36px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* 2x2 grid borders */
+.about-values-box .value-item:nth-child(1),
+.about-values-box .value-item:nth-child(3) {
+  border-right: 1px solid var(--grey-15);
+}
+
+.about-values-box .value-item:nth-child(1),
+.about-values-box .value-item:nth-child(2) {
+  border-bottom: 1px solid var(--grey-15);
+}
+
+.value-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.value-icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(112, 59, 247, 0.4);
+  background: rgba(112, 59, 247, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--purple-75);
+}
+
+.value-title {
+  font-size: clamp(18px, 1.3vw, 20px);
+  font-weight: 600;
+  color: var(--absolutewhite);
+}
+
+.value-desc {
+  font-size: clamp(14px, 1vw, 15px);
+  color: var(--grey-60);
+  line-height: var(--leading-relaxed);
+}
+
+/* 3. Our Achievements Section */
+.about-achievements-section {
+  padding-top: clamp(60px, 7vw, 100px);
+  padding-bottom: clamp(60px, 7vw, 100px);
+}
+
+.about-achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 2vw, 30px);
+}
+
+.achievement-card {
+  background-color: var(--grey-10);
+  border: 1px solid var(--grey-15);
+  border-radius: var(--radius-xl);
+  padding: clamp(24px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: var(--transition-base);
+}
+
+.achievement-card:hover {
+  border-color: var(--grey-20);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.achievement-title {
+  font-size: clamp(20px, 1.5vw, 24px);
+  font-weight: 600;
+  color: var(--absolutewhite);
+}
+
+.achievement-desc {
+  font-size: clamp(14px, 1.05vw, 16px);
+  color: var(--grey-60);
+  line-height: var(--leading-relaxed);
+}
+
+/* 4. Navigating Experience / Steps Section */
+.about-steps-section {
+  padding-top: clamp(60px, 7vw, 100px);
+  padding-bottom: clamp(60px, 7vw, 100px);
+}
+
+.about-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 2vw, 30px);
+}
+
+.step-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-card-header {
+  border-left: 2px solid var(--purple-60);
+  padding-left: 16px;
+  padding-bottom: 12px;
+}
+
+.step-number {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--absolutewhite);
+}
+
+.step-card-body {
+  background: linear-gradient(135deg, rgba(112, 59, 247, 0.06) 0%, rgba(20, 20, 20, 0.85) 100%);
+  border: 1px solid var(--grey-15);
+  border-top: 1px solid rgba(112, 59, 247, 0.3);
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  padding: clamp(24px, 2.5vw, 36px);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.step-title {
+  font-size: clamp(18px, 1.3vw, 22px);
+  font-weight: 600;
+  color: var(--absolutewhite);
+  line-height: var(--leading-snug);
+}
+
+.step-desc {
+  font-size: clamp(14px, 1vw, 15px);
+  color: var(--grey-60);
+  line-height: var(--leading-relaxed);
+}
+
+/* 5. Meet the Team Section */
+.about-team-section {
+  padding-top: clamp(60px, 7vw, 100px);
+  padding-bottom: clamp(60px, 7vw, 100px);
+}
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(16px, 1.8vw, 24px);
+}
+
+.team-card {
+  background-color: var(--grey-10);
+  border: 1px solid var(--grey-15);
+  border-radius: var(--radius-xl);
+  padding: clamp(16px, 1.5vw, 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: var(--transition-base);
+  position: relative;
+}
+
+.team-card:hover {
+  border-color: var(--grey-20);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.team-photo-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 3.4;
+  background-color: var(--grey-08);
+}
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-social-badge {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background-color: var(--purple-60);
+  color: var(--absolutewhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(112, 59, 247, 0.4);
+  transition: var(--transition-fast);
+  z-index: 2;
+}
+
+.team-social-badge:hover {
+  background-color: var(--purple-65);
+  transform: translateX(-50%) scale(1.1);
+}
+
+.team-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.team-name {
+  font-size: clamp(18px, 1.2vw, 20px);
+  font-weight: 600;
+  color: var(--absolutewhite);
+}
+
+.team-role {
+  font-size: 14px;
+  color: var(--grey-60);
+  font-weight: 400;
+}
+
+.team-chat-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--grey-08);
+  border: 1px solid var(--grey-15);
+  border-radius: var(--radius-full);
+  padding: 6px 6px 6px 16px;
+  margin-top: auto;
+}
+
+.team-chat-text {
+  font-size: 14px;
+  color: var(--absolutewhite);
+  font-weight: 500;
+}
+
+.team-send-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-full);
+  background-color: var(--purple-60);
+  color: var(--absolutewhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.team-send-btn:hover {
+  background-color: var(--purple-65);
+  transform: scale(1.08);
+}
+
+/* 6. Our Valued Clients Section */
+.about-clients-section {
+  padding-top: clamp(60px, 7vw, 100px);
+  padding-bottom: clamp(60px, 7vw, 100px);
+}
+
+.about-clients-wrapper {
+  width: 100%;
+}
+
+.about-clients-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(20px, 2.5vw, 30px);
+}
+
+.client-card {
+  background-color: var(--grey-10);
+  border: 1px solid var(--grey-15);
+  border-radius: var(--radius-xl);
+  padding: clamp(24px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 2.2vw, 28px);
+  transition: var(--transition-base);
+}
+
+.client-card:hover {
+  border-color: var(--grey-20);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.client-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.client-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.client-since {
+  font-size: 14px;
+  color: var(--grey-60);
+  font-weight: 400;
+}
+
+.client-name {
+  font-size: clamp(20px, 1.6vw, 26px);
+  font-weight: 600;
+  color: var(--absolutewhite);
+}
+
+.btn-visit-website {
+  background-color: var(--grey-08);
+  border: 1px solid var(--grey-15);
+  color: var(--absolutewhite);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-visit-website:hover {
+  background-color: var(--grey-15);
+  border-color: var(--grey-20);
+  color: var(--purple-75);
+}
+
+.client-meta-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--grey-15);
+}
+
+.client-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.client-meta-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--grey-60);
+}
+
+.client-meta-label svg {
+  color: var(--grey-60);
+  flex-shrink: 0;
+}
+
+.client-meta-value {
+  font-size: clamp(14px, 1.1vw, 16px);
+  color: var(--absolutewhite);
+  font-weight: 500;
+}
+
+.client-quote-box {
+  background-color: var(--grey-08);
+  border: 1px solid var(--grey-15);
+  border-radius: var(--radius-lg);
+  padding: clamp(18px, 2vw, 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.client-quote-label {
+  font-size: 14px;
+  color: var(--grey-60);
+  font-weight: 500;
+}
+
+.client-quote-text {
+  font-size: clamp(14px, 1.05vw, 16px);
+  color: var(--absolutewhite);
+  line-height: var(--leading-relaxed);
+}
+
+/* Clients Pagination Bar */
+.clients-pagination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: clamp(24px, 3vw, 40px);
+  padding-top: 20px;
+  border-top: 1px solid var(--grey-15);
+}
+
+.clients-pagination-counter {
+  font-size: 16px;
+  color: var(--grey-60);
+  font-weight: 500;
+}
+
+.current-client-page {
+  font-weight: 600;
+}
+
+.clients-pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.client-arrow-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--grey-15);
+  background-color: var(--grey-10);
+  color: var(--absolutewhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.client-arrow-btn:hover {
+  background-color: var(--grey-15);
+  border-color: var(--grey-20);
+  color: var(--purple-75);
+}
+
+.client-arrow-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* ==========================================================================
+   ABOUT US - RESPONSIVE BREAKPOINTS (TABLET & MOBILE)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .about-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Hero Mobile */
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .about-hero-visual {
+    order: -1; /* House image card at the top! */
+  }
+  .about-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .about-stat-card.about-stat-card-wide {
+    grid-column: 1 / -1;
+  }
+
+  /* Values Mobile */
+  .about-values-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .about-values-box {
+    grid-template-columns: 1fr;
+  }
+  .about-values-box .value-item {
+    border-right: none !important;
+    border-bottom: 1px solid var(--grey-15);
+  }
+  .about-values-box .value-item:last-child {
+    border-bottom: none;
+  }
+
+  /* Achievements Mobile */
+  .about-achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Steps Mobile */
+  .about-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Team Mobile */
+  .about-team-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Clients Mobile */
+  .about-clients-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .client-card-top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .btn-visit-website {
+    width: 100%;
+  }
+  .clients-pagination-bar {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+

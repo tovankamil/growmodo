@@ -25,7 +25,6 @@ get_header();
   // 5. Frequently Asked Questions
   get_template_part( 'template-parts/faq' );
   ?>
-</main>
 
 <?php
 get_footer();
