@@ -21,7 +21,7 @@
           <div class="feature-ring-outer"></div>
           <div class="feature-ring-inner"></div>
           <div class="feature-icon-core">
-            <svg class="feature-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="feature-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
               <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
@@ -41,7 +41,7 @@
           <div class="feature-ring-outer"></div>
           <div class="feature-ring-inner"></div>
           <div class="feature-icon-core">
-            <svg class="feature-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="feature-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="2" y="6" width="20" height="12" rx="2"></rect>
               <circle cx="12" cy="12" r="2"></circle>
               <path d="M6 12h.01M18 12h.01"></path>
@@ -62,7 +62,7 @@
           <div class="feature-ring-outer"></div>
           <div class="feature-ring-inner"></div>
           <div class="feature-icon-core">
-            <svg class="feature-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="feature-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="4" y="2" width="16" height="20" rx="2"></rect>
               <path d="M9 22v-4h6v4"></path>
               <path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01"></path>
@@ -83,7 +83,7 @@
           <div class="feature-ring-outer"></div>
           <div class="feature-ring-inner"></div>
           <div class="feature-icon-core">
-            <svg class="feature-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <svg class="feature-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <rect x="2.5" y="2.5" width="8" height="8" rx="2.5" fill="currentColor"/>
               <rect x="13.5" y="2.5" width="8" height="8" rx="2.5" fill="currentColor"/>
               <rect x="2.5" y="13.5" width="8" height="8" rx="2.5" fill="currentColor"/>
