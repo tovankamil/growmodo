@@ -515,6 +515,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
     });
+
+    // Close on window scroll
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.estatein-custom-dropdown.is-open').forEach(dd => {
+        dd.classList.remove('is-open');
+        const t = dd.querySelector('.estatein-dropdown-trigger');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+    }, { passive: true });
   }
 
   initEstateinCustomSelects();
