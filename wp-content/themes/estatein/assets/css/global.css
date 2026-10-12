@@ -654,6 +654,13 @@ button:focus-visible, a:focus-visible {
   filter: drop-shadow(0 0 8px rgba(192, 132, 252, 0.8));
 }
 
+.feature-card:hover .feature-icon-svg,
+.service-quick-card:hover .feature-icon-svg,
+.service-feature-card:hover .feature-icon-svg {
+  color: var(--absolutewhite);
+  filter: drop-shadow(0 0 8px rgba(192, 132, 252, 0.8));
+}
+
 .feature-title {
   font-family: var(--font-primary);
   font-size: clamp(12.5px, 0.92vw, 15.5px);
@@ -3402,12 +3409,34 @@ button:focus-visible, a:focus-visible {
 }
 .service-promo-card-wide {
   grid-column: span 2;
-  background: linear-gradient(135deg, rgba(112, 59, 247, 0.14) 0%, rgba(26, 26, 26, 0.95) 100%), var(--grey-10);
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 10% 20%, rgba(112, 59, 247, 0.16) 0%, transparent 65%), var(--grey-10);
   border: 1px solid var(--grey-15);
   border-radius: var(--radius-lg);
   padding: 32px;
   display: flex;
   align-items: center;
+}
+.service-promo-card-wide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/Abstract%20Design3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+.service-promo-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
 }
 .service-promo-header {
   display: flex;
@@ -3435,13 +3464,34 @@ button:focus-visible, a:focus-visible {
   margin-top: 40px;
 }
 .service-investment-banner-card {
-  background: linear-gradient(180deg, rgba(112, 59, 247, 0.14) 0%, rgba(26, 26, 26, 0.95) 100%), var(--grey-10);
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 10% 20%, rgba(112, 59, 247, 0.16) 0%, transparent 65%), var(--grey-10);
   border: 1px solid var(--grey-15);
   border-radius: var(--radius-lg);
   padding: 36px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.service-investment-banner-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/Abstract%20Design3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+.investment-banner-content {
+  position: relative;
+  z-index: 2;
 }
 .investment-banner-title {
   font-size: 24px;

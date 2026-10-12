@@ -19,11 +19,11 @@
       <a href="#unlock-value" class="service-quick-card">
         <div class="service-quick-icon-wrap">
           <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
-            <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
-            <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
-            <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
+            <circle cx="34" cy="34" r="28" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <circle cx="34" cy="34" r="20.5" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <path d="M 53.80,39.31 A 20.5 20.5 0 0 1 44.25,51.75 C 40.0,54.5 38.0,58.5 36.44,61.89 A 28 28 0 0 1 6.11,36.44" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M 14.20,28.69 A 20.5 20.5 0 0 1 23.75,16.25 C 28.0,13.5 30.0,9.5 31.56,6.11 A 28 28 0 0 1 61.89,31.56" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="34" cy="34" r="18" fill="rgba(112, 59, 247, 0.16)" stroke="rgba(112, 59, 247, 0.7)" stroke-width="1.4"/>
           </svg>
           <svg class="feature-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -42,11 +42,11 @@
       <a href="#unlock-value" class="service-quick-card">
         <div class="service-quick-icon-wrap">
           <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
-            <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
-            <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
-            <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
+            <circle cx="34" cy="34" r="28" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <circle cx="34" cy="34" r="20.5" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <path d="M 53.80,39.31 A 20.5 20.5 0 0 1 44.25,51.75 C 40.0,54.5 38.0,58.5 36.44,61.89 A 28 28 0 0 1 6.11,36.44" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M 14.20,28.69 A 20.5 20.5 0 0 1 23.75,16.25 C 28.0,13.5 30.0,9.5 31.56,6.11 A 28 28 0 0 1 61.89,31.56" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="34" cy="34" r="18" fill="rgba(112, 59, 247, 0.16)" stroke="rgba(112, 59, 247, 0.7)" stroke-width="1.4"/>
           </svg>
           <svg class="feature-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="2" y="6" width="20" height="12" rx="2"></rect>
@@ -66,11 +66,11 @@
       <a href="#property-management" class="service-quick-card">
         <div class="service-quick-icon-wrap">
           <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
-            <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
-            <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
-            <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
+            <circle cx="34" cy="34" r="28" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <circle cx="34" cy="34" r="20.5" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <path d="M 53.80,39.31 A 20.5 20.5 0 0 1 44.25,51.75 C 40.0,54.5 38.0,58.5 36.44,61.89 A 28 28 0 0 1 6.11,36.44" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M 14.20,28.69 A 20.5 20.5 0 0 1 23.75,16.25 C 28.0,13.5 30.0,9.5 31.56,6.11 A 28 28 0 0 1 61.89,31.56" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="34" cy="34" r="18" fill="rgba(112, 59, 247, 0.16)" stroke="rgba(112, 59, 247, 0.7)" stroke-width="1.4"/>
           </svg>
           <svg class="feature-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="4" y="2" width="16" height="20" rx="2"></rect>
@@ -90,22 +90,17 @@
       <a href="#smart-investments" class="service-quick-card">
         <div class="service-quick-icon-wrap">
           <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
-            <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
-            <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
-            <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
+            <circle cx="34" cy="34" r="28" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <circle cx="34" cy="34" r="20.5" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <path d="M 53.80,39.31 A 20.5 20.5 0 0 1 44.25,51.75 C 40.0,54.5 38.0,58.5 36.44,61.89 A 28 28 0 0 1 6.11,36.44" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M 14.20,28.69 A 20.5 20.5 0 0 1 23.75,16.25 C 28.0,13.5 30.0,9.5 31.56,6.11 A 28 28 0 0 1 61.89,31.56" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="34" cy="34" r="18" fill="rgba(112, 59, 247, 0.16)" stroke="rgba(112, 59, 247, 0.7)" stroke-width="1.4"/>
           </svg>
-          <svg class="feature-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          <svg class="feature-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <rect x="2.5" y="2.5" width="8" height="8" rx="2.5" fill="currentColor"/>
+            <rect x="13.5" y="2.5" width="8" height="8" rx="2.5" fill="currentColor"/>
+            <rect x="2.5" y="13.5" width="8" height="8" rx="2.5" fill="currentColor"/>
+            <path d="M17.5 13.5v8M13.5 17.5h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
           </svg>
         </div>
         <span class="service-quick-title"><?php esc_html_e( 'Smart Investments, Informed Decisions', 'estatein' ); ?></span>

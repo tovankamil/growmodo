@@ -17,14 +17,15 @@
     <!-- 4 Contact Cards Grid -->
     <div class="services-quick-nav-grid contact-quick-nav-grid">
       <!-- 1. Email -->
+      <!--email_off-->
       <a href="mailto:info@estatein.com" class="service-quick-card contact-card-item">
         <div class="service-quick-icon-wrap">
           <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
-            <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
-            <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
-            <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
+            <circle cx="34" cy="34" r="28" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <circle cx="34" cy="34" r="20.5" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <path d="M 53.80,39.31 A 20.5 20.5 0 0 1 44.25,51.75 C 40.0,54.5 38.0,58.5 36.44,61.89 A 28 28 0 0 1 6.11,36.44" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M 14.20,28.69 A 20.5 20.5 0 0 1 23.75,16.25 C 28.0,13.5 30.0,9.5 31.56,6.11 A 28 28 0 0 1 61.89,31.56" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="34" cy="34" r="18" fill="rgba(112, 59, 247, 0.16)" stroke="rgba(112, 59, 247, 0.7)" stroke-width="1.4"/>
           </svg>
           <svg class="feature-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -39,16 +40,17 @@
           </svg>
         </span>
       </a>
+      <!--/email_off-->
 
       <!-- 2. Phone -->
       <a href="tel:+11234567890" class="service-quick-card contact-card-item">
         <div class="service-quick-icon-wrap">
           <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
-            <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
-            <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
-            <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
+            <circle cx="34" cy="34" r="28" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <circle cx="34" cy="34" r="20.5" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <path d="M 53.80,39.31 A 20.5 20.5 0 0 1 44.25,51.75 C 40.0,54.5 38.0,58.5 36.44,61.89 A 28 28 0 0 1 6.11,36.44" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M 14.20,28.69 A 20.5 20.5 0 0 1 23.75,16.25 C 28.0,13.5 30.0,9.5 31.56,6.11 A 28 28 0 0 1 61.89,31.56" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="34" cy="34" r="18" fill="rgba(112, 59, 247, 0.16)" stroke="rgba(112, 59, 247, 0.7)" stroke-width="1.4"/>
           </svg>
           <svg class="feature-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -67,11 +69,11 @@
       <a href="#office-locations" class="service-quick-card contact-card-item">
         <div class="service-quick-icon-wrap">
           <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
-            <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
-            <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
-            <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
+            <circle cx="34" cy="34" r="28" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <circle cx="34" cy="34" r="20.5" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <path d="M 53.80,39.31 A 20.5 20.5 0 0 1 44.25,51.75 C 40.0,54.5 38.0,58.5 36.44,61.89 A 28 28 0 0 1 6.11,36.44" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M 14.20,28.69 A 20.5 20.5 0 0 1 23.75,16.25 C 28.0,13.5 30.0,9.5 31.56,6.11 A 28 28 0 0 1 61.89,31.56" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="34" cy="34" r="18" fill="rgba(112, 59, 247, 0.16)" stroke="rgba(112, 59, 247, 0.7)" stroke-width="1.4"/>
           </svg>
           <svg class="feature-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -91,11 +93,11 @@
       <div class="service-quick-card contact-card-item contact-card-socials">
         <div class="service-quick-icon-wrap">
           <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
-            <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
-            <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
-            <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
+            <circle cx="34" cy="34" r="28" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <circle cx="34" cy="34" r="20.5" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1"/>
+            <path d="M 53.80,39.31 A 20.5 20.5 0 0 1 44.25,51.75 C 40.0,54.5 38.0,58.5 36.44,61.89 A 28 28 0 0 1 6.11,36.44" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M 14.20,28.69 A 20.5 20.5 0 0 1 23.75,16.25 C 28.0,13.5 30.0,9.5 31.56,6.11 A 28 28 0 0 1 61.89,31.56" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="34" cy="34" r="18" fill="rgba(112, 59, 247, 0.16)" stroke="rgba(112, 59, 247, 0.7)" stroke-width="1.4"/>
           </svg>
           <svg class="feature-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="18" cy="5" r="3"></circle>
