@@ -10,7 +10,7 @@ $featured_pages = array(
 	array(
 		array(
 			'title' => 'Seaside Serenity Villa',
-			'image' => get_template_directory_uri() . '/assets/images/img1.jpg',
+			'image' => 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'A breathtaking 4-bedroom villa with panoramic ocean views, private infinity pool, and pristine coastal access.',
 			'beds'  => '4-Bedroom',
 			'baths' => '3-Bathroom',
@@ -20,7 +20,7 @@ $featured_pages = array(
 		),
 		array(
 			'title' => 'Metropolis Skyline Penthouse',
-			'image' => get_template_directory_uri() . '/assets/images/Image2.jpg',
+			'image' => 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'A chic and fully-furnished 3-bedroom penthouse with 360-degree city skyline views and exclusive rooftop terrace.',
 			'beds'  => '3-Bedroom',
 			'baths' => '2-Bathroom',
@@ -30,7 +30,7 @@ $featured_pages = array(
 		),
 		array(
 			'title' => 'Rustic Mountain Retreat',
-			'image' => get_template_directory_uri() . '/assets/images/Image3.jpg',
+			'image' => 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'An elegant 4-bedroom timber-and-stone lodge in a serene alpine setting with heated floors and grand fireplace.',
 			'beds'  => '4-Bedroom',
 			'baths' => '3-Bathroom',
@@ -43,7 +43,7 @@ $featured_pages = array(
 	array(
 		array(
 			'title' => 'Azure Coastal Residence',
-			'image' => get_template_directory_uri() . '/assets/images/Image4.jpg',
+			'image' => 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'A modern architectural jewel perched above turquoise waters with private boat slip and expansive sun deck.',
 			'beds'  => '5-Bedroom',
 			'baths' => '4-Bathroom',
@@ -53,7 +53,7 @@ $featured_pages = array(
 		),
 		array(
 			'title' => 'Grand Crest Manor',
-			'image' => get_template_directory_uri() . '/assets/images/office.png',
+			'image' => 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'Stately manor with manicured grounds, grand vaulted ceilings, wine cellar, and private tennis court.',
 			'beds'  => '6-Bedroom',
 			'baths' => '5-Bathroom',
@@ -185,7 +185,7 @@ $featured_pages = array(
 		),
 		array(
 			'title' => 'Pinecrest Executive Villa',
-			'image' => get_template_directory_uri() . '/assets/images/Image2.jpg',
+			'image' => 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'Gated suburban masterpiece with private security station, smart automation, and private home cinema.',
 			'beds'  => '5-Bedroom',
 			'baths' => '4-Bathroom',
@@ -195,7 +195,7 @@ $featured_pages = array(
 		),
 		array(
 			'title' => 'Willow Creek Residence',
-			'image' => get_template_directory_uri() . '/assets/images/Image3.jpg',
+			'image' => 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'Peaceful creekside home surrounded by weeping willows with stone walking paths and sunlit conservatory.',
 			'beds'  => '3-Bedroom',
 			'baths' => '2-Bathroom',
@@ -208,7 +208,7 @@ $featured_pages = array(
 	array(
 		array(
 			'title' => 'Sovereign Heights Palace',
-			'image' => get_template_directory_uri() . '/assets/images/office.png',
+			'image' => 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'Majestic hilltop compound with 360-degree territorial views, indoor pool pavilion, and 8-car subterranean garage.',
 			'beds'  => '6-Bedroom',
 			'baths' => '6-Bathroom',
@@ -218,7 +218,7 @@ $featured_pages = array(
 		),
 		array(
 			'title' => 'Coastal Pearl Retreat',
-			'image' => get_template_directory_uri() . '/assets/images/img1.jpg',
+			'image' => 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'Direct beachfront bungalow with private boardwalk to the sand, outdoor shower, and cedar shingle siding.',
 			'beds'  => '4-Bedroom',
 			'baths' => '3-Bathroom',
@@ -228,7 +228,7 @@ $featured_pages = array(
 		),
 		array(
 			'title' => 'Horizon View Duplex',
-			'image' => get_template_directory_uri() . '/assets/images/Image4.jpg',
+			'image' => 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'Sophisticated multi-level duplex featuring expansive entertainment roof deck and separate guest studio.',
 			'beds'  => '3-Bedroom',
 			'baths' => '3-Bathroom',
@@ -284,7 +284,7 @@ $featured_pages = array(
 		),
 		array(
 			'title' => 'Timberland Eco Lodge',
-			'image' => get_template_directory_uri() . '/assets/images/Image3.jpg',
+			'image' => 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'Passive solar home built with sustainably harvested timber, geothermal heating, and rainwater harvesting.',
 			'beds'  => '3-Bedroom',
 			'baths' => '2-Bathroom',
@@ -294,7 +294,7 @@ $featured_pages = array(
 		),
 		array(
 			'title' => 'Sunset Cove Haven',
-			'image' => get_template_directory_uri() . '/assets/images/Image4.jpg',
+			'image' => 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'Idyllic oceanfront setting with private cove access, heated seawater pool, and sunset cocktail terrace.',
 			'beds'  => '4-Bedroom',
 			'baths' => '4-Bathroom',
@@ -307,7 +307,7 @@ $featured_pages = array(
 	array(
 		array(
 			'title' => 'The Royal Sovereign Estate',
-			'image' => get_template_directory_uri() . '/assets/images/office.png',
+			'image' => 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'An irreplaceable trophy compound with security perimeter, helipad, private spa facility, and grand ballroom.',
 			'beds'  => '8-Bedroom',
 			'baths' => '8-Bathroom',
@@ -317,7 +317,7 @@ $featured_pages = array(
 		),
 		array(
 			'title' => 'Starlight Ocean Villa',
-			'image' => get_template_directory_uri() . '/assets/images/img1.jpg',
+			'image' => 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'Coastal estate designed for stargazing with glass observatory dome, firepit terrace, and private beach path.',
 			'beds'  => '5-Bedroom',
 			'baths' => '4-Bathroom',
@@ -327,7 +327,7 @@ $featured_pages = array(
 		),
 		array(
 			'title' => 'Harmony Hillside Estate',
-			'image' => get_template_directory_uri() . '/assets/images/Image2.jpg',
+			'image' => 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
 			'desc'  => 'Nestled along scenic mountain ridge with terraced gardens, heated infinity pool, and seamless indoor-outdoor living.',
 			'beds'  => '4-Bedroom',
 			'baths' => '3-Bathroom',
@@ -365,9 +365,11 @@ $featured_pages = array(
           <div class="properties-page-slide" data-page="<?php echo esc_attr( $page_idx + 1 ); ?>">
             <?php foreach ( $page_props as $prop_idx => $prop ) : ?>
               <article class="property-card">
-                <div class="property-image-wrapper">
-                  <img src="<?php echo esc_url( $prop['image'] ); ?>" alt="<?php echo esc_attr( $prop['title'] ); ?>" class="property-image" width="864" height="636" loading="lazy">
-                </div>
+                <a href="<?php echo esc_url( $prop['link'] ); ?>" class="property-image-link" aria-label="<?php echo esc_attr( $prop['title'] ); ?>">
+                  <div class="property-image-wrapper">
+                    <img src="<?php echo esc_url( $prop['image'] ); ?>" alt="<?php echo esc_attr( $prop['title'] ); ?>" class="property-image" width="864" height="636" loading="lazy">
+                  </div>
+                </a>
                 <div class="property-details">
                   <h3 class="property-name"><?php echo esc_html( $prop['title'] ); ?></h3>
                   <p class="property-desc">

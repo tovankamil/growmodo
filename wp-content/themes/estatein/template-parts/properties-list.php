@@ -11,7 +11,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Seaside Serenity Villa',
 			'badge'       => 'Coastal Escapes - Where Waves Beckon',
-			'image'       => get_template_directory_uri() . '/assets/images/img1.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Wake up to the soothing melody of waves. This beachfront villa offers breathtaking ocean views, modern amenities, and private direct access to pristine sands.',
 			'price'       => '$1,250,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -24,7 +24,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Metropolitan Haven',
 			'badge'       => 'Urban Oasis - Life in the Heart of the City',
-			'image'       => get_template_directory_uri() . '/assets/images/Image2.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Immerse yourself in the energy of the city. This modern apartment in the heart of downtown features skyline views, high ceilings, and luxury finishes.',
 			'price'       => '$650,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -37,7 +37,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Rustic Retreat Cottage',
 			'badge'       => 'Countryside Charm - Escape to Nature\'s Embrace',
-			'image'       => get_template_directory_uri() . '/assets/images/Image3.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Find tranquility in the countryside. This charming cottage is nestled amidst rolling hills, featuring cozy stone fireplaces and extensive private grounds.',
 			'price'       => '$350,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -53,7 +53,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Azure Coastal Residence',
 			'badge'       => 'Waterfront Luxury - Uninterrupted Horizons',
-			'image'       => get_template_directory_uri() . '/assets/images/Image4.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'A contemporary marvel perched above azure waters featuring infinity pool, private deep-water dock, and floor-to-ceiling glass walls.',
 			'price'       => '$1,650,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -66,7 +66,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Grand Crest Manor',
 			'badge'       => 'Architectural Heritage - Classic Distinction',
-			'image'       => get_template_directory_uri() . '/assets/images/office.png',
+			'image'       => 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Stately manor with manicured botanical gardens, vaulted mahogany ceilings, temperature-controlled wine cellar, and private tennis court.',
 			'price'       => '$3,200,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -234,7 +234,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Pinecrest Executive Villa',
 			'badge'       => 'Suburban Prestige - Private Security',
-			'image'       => get_template_directory_uri() . '/assets/images/Image2.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Gated suburban masterpiece with private security station, smart automation, and state-of-the-art acoustic cinema room.',
 			'price'       => '$1,290,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -247,7 +247,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Willow Creek Residence',
 			'badge'       => 'Green Living - Natural Haven',
-			'image'       => get_template_directory_uri() . '/assets/images/Image3.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Peaceful creekside home surrounded by weeping willows with stone walking paths and sunlit indoor greenhouse conservatory.',
 			'price'       => '$690,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -263,7 +263,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Sovereign Heights Palace',
 			'badge'       => 'Grand Estate - Hilltop Dominance',
-			'image'       => get_template_directory_uri() . '/assets/images/office.png',
+			'image'       => 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Majestic hilltop compound with 360-degree territorial views, indoor pool pavilion, and 8-car subterranean garage.',
 			'price'       => '$4,200,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -276,7 +276,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Coastal Pearl Retreat',
 			'badge'       => 'Beachfront Bungalow - Pure Paradise',
-			'image'       => get_template_directory_uri() . '/assets/images/img1.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Direct beachfront bungalow with private boardwalk to the sand, outdoor warm shower, and authentic cedar shingle siding.',
 			'price'       => '$1,580,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -289,7 +289,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Horizon View Duplex',
 			'badge'       => 'Modern Duplex - Urban Skyline',
-			'image'       => get_template_directory_uri() . '/assets/images/Image4.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Sophisticated multi-level duplex featuring expansive entertainment roof deck and separate private ground floor guest studio.',
 			'price'       => '$890,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -360,7 +360,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Timberland Eco Lodge',
 			'badge'       => 'Sustainable Living - Zero Carbon',
-			'image'       => get_template_directory_uri() . '/assets/images/Image3.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Passive solar home built with sustainably harvested timber, geothermal heating, and rainwater purification reservoirs.',
 			'price'       => '$920,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -373,7 +373,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Sunset Cove Haven',
 			'badge'       => 'Malibu Coastline - Private Shore',
-			'image'       => get_template_directory_uri() . '/assets/images/Image4.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Idyllic oceanfront setting with private cove access, heated seawater swimming pool, and sunset cocktail terrace.',
 			'price'       => '$1,880,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -389,7 +389,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'The Royal Sovereign Estate',
 			'badge'       => 'Trophy Landmark - Unrivaled Status',
-			'image'       => get_template_directory_uri() . '/assets/images/office.png',
+			'image'       => 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'An irreplaceable trophy compound with security perimeter, helipad, private spa wellness facility, and grand ballroom.',
 			'price'       => '$6,800,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -402,7 +402,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Starlight Ocean Villa',
 			'badge'       => 'Observatory Living - Night Sky Views',
-			'image'       => get_template_directory_uri() . '/assets/images/img1.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Coastal estate designed for stargazing with glass observatory dome, firepit terrace, and direct private beach stairs.',
 			'price'       => '$2,250,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -415,7 +415,7 @@ $catalogue_pages = array(
 		array(
 			'title'       => 'Harmony Hillside Estate',
 			'badge'       => 'Mountain Panoramas - Infinity Edge',
-			'image'       => get_template_directory_uri() . '/assets/images/Image2.jpg',
+			'image'       => 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
 			'desc'        => 'Nestled along scenic mountain ridge with terraced Japanese gardens, heated infinity pool, and seamless indoor-outdoor living.',
 			'price'       => '$1,350,000',
 			'link'        => home_url( '/property/seaside-serenity-villa/' ),
@@ -459,9 +459,11 @@ $catalogue_pages = array(
                        data-size="<?php echo esc_attr( $item['size'] ); ?>"
                        data-year="<?php echo esc_attr( $item['year'] ); ?>"
                        data-title="<?php echo esc_attr( strtolower( $item['title'] ) ); ?>">
-                <div class="property-image-wrapper">
-                  <img src="<?php echo esc_url( $item['image'] ); ?>" alt="<?php echo esc_attr( $item['title'] ); ?>" class="property-image" loading="lazy">
-                </div>
+                <a href="<?php echo esc_url( $item['link'] ); ?>" class="property-image-link" aria-label="<?php echo esc_attr( $item['title'] ); ?>">
+                  <div class="property-image-wrapper">
+                    <img src="<?php echo esc_url( $item['image'] ); ?>" alt="<?php echo esc_attr( $item['title'] ); ?>" class="property-image" loading="lazy">
+                  </div>
+                </a>
                 <div class="property-details">
                   <div class="catalogue-badge-wrap">
                     <span class="catalogue-category-badge"><?php echo esc_html( $item['badge'] ); ?></span>

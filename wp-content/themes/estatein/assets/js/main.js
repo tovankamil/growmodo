@@ -331,6 +331,193 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // 10. Modern Glassmorphic Custom Dropdowns
+  function initEstateinCustomSelects() {
+    const selectWrappers = document.querySelectorAll('.filter-select-wrapper, .form-select-wrapper');
+
+    selectWrappers.forEach(wrapper => {
+      if (wrapper.dataset.customized === 'true') return;
+      const nativeSelect = wrapper.querySelector('select');
+      if (!nativeSelect) return;
+
+      wrapper.dataset.customized = 'true';
+      nativeSelect.classList.add('estatein-native-select-hidden');
+
+      const isFilter = wrapper.classList.contains('filter-select-wrapper');
+      const customDropdown = document.createElement('div');
+      customDropdown.className = 'estatein-custom-dropdown' + (isFilter ? ' is-filter-dropdown' : ' is-form-dropdown');
+
+      const trigger = document.createElement('button');
+      trigger.type = 'button';
+      trigger.className = 'estatein-dropdown-trigger';
+      trigger.setAttribute('aria-haspopup', 'listbox');
+      trigger.setAttribute('aria-expanded', 'false');
+
+      const leftWrap = document.createElement('div');
+      leftWrap.className = 'estatein-trigger-left';
+
+      // If filter-select-wrapper has .filter-icon, adopt it
+      const existingIcon = wrapper.querySelector('.filter-icon');
+      if (existingIcon) {
+        existingIcon.style.display = 'none';
+        const iconClone = existingIcon.cloneNode(true);
+        iconClone.style.display = 'flex';
+        iconClone.classList.add('estatein-trigger-icon');
+        leftWrap.appendChild(iconClone);
+      }
+
+      const labelSpan = document.createElement('span');
+      labelSpan.className = 'estatein-dropdown-label';
+      const curSelected = nativeSelect.options[nativeSelect.selectedIndex] || nativeSelect.options[0];
+      labelSpan.textContent = curSelected ? curSelected.text : 'Select...';
+      if (curSelected && curSelected.value !== '') {
+        customDropdown.classList.add('has-selection');
+      }
+      leftWrap.appendChild(labelSpan);
+      trigger.appendChild(leftWrap);
+
+      const chevron = document.createElement('span');
+      chevron.className = 'estatein-dropdown-chevron';
+      chevron.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
+      trigger.appendChild(chevron);
+
+      customDropdown.appendChild(trigger);
+
+      // Create Popup Menu
+      const menu = document.createElement('div');
+      menu.className = 'estatein-dropdown-menu';
+      menu.setAttribute('role', 'listbox');
+
+      Array.from(nativeSelect.options).forEach((opt) => {
+        const optionItem = document.createElement('div');
+        optionItem.className = 'estatein-dropdown-option' + (opt.selected ? ' is-selected' : '');
+        optionItem.setAttribute('role', 'option');
+        optionItem.setAttribute('data-value', opt.value);
+
+        const optionText = document.createElement('span');
+        optionText.className = 'estatein-option-text';
+        optionText.textContent = opt.text;
+        optionItem.appendChild(optionText);
+
+        const checkIcon = document.createElement('span');
+        checkIcon.className = 'estatein-option-check';
+        checkIcon.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
+        optionItem.appendChild(checkIcon);
+
+        optionItem.addEventListener('click', (e) => {
+          e.stopPropagation();
+          nativeSelect.value = opt.value;
+          labelSpan.textContent = opt.text;
+
+          if (opt.value !== '') {
+            customDropdown.classList.add('has-selection');
+          } else {
+            customDropdown.classList.remove('has-selection');
+          }
+
+          menu.querySelectorAll('.estatein-dropdown-option').forEach(o => o.classList.remove('is-selected'));
+          optionItem.classList.add('is-selected');
+
+          closeDropdown();
+          nativeSelect.dispatchEvent(new Event('change', { bubbles: true }));
+          trigger.focus();
+        });
+
+        menu.appendChild(optionItem);
+      });
+
+      customDropdown.appendChild(menu);
+      wrapper.appendChild(customDropdown);
+
+      function openDropdown() {
+        document.querySelectorAll('.estatein-custom-dropdown.is-open').forEach(dd => {
+          if (dd !== customDropdown) {
+            dd.classList.remove('is-open');
+            const t = dd.querySelector('.estatein-dropdown-trigger');
+            if (t) t.setAttribute('aria-expanded', 'false');
+          }
+        });
+        customDropdown.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeDropdown() {
+        customDropdown.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+
+      function toggleDropdown() {
+        if (customDropdown.classList.contains('is-open')) {
+          closeDropdown();
+        } else {
+          openDropdown();
+        }
+      }
+
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleDropdown();
+      });
+
+      // Synchronize if select is updated externally
+      nativeSelect.addEventListener('change', () => {
+        const cur = nativeSelect.options[nativeSelect.selectedIndex];
+        if (cur) {
+          labelSpan.textContent = cur.text;
+          if (cur.value !== '') {
+            customDropdown.classList.add('has-selection');
+          } else {
+            customDropdown.classList.remove('has-selection');
+          }
+          menu.querySelectorAll('.estatein-dropdown-option').forEach(o => {
+            o.classList.toggle('is-selected', o.getAttribute('data-value') === cur.value);
+          });
+        }
+      });
+
+      // Form reset support
+      const parentForm = nativeSelect.closest('form');
+      if (parentForm) {
+        parentForm.addEventListener('reset', () => {
+          setTimeout(() => {
+            const firstOpt = nativeSelect.options[0];
+            if (firstOpt) {
+              labelSpan.textContent = firstOpt.text;
+              customDropdown.classList.remove('has-selection');
+              menu.querySelectorAll('.estatein-dropdown-option').forEach((o, i) => {
+                o.classList.toggle('is-selected', i === 0);
+              });
+            }
+          }, 20);
+        });
+      }
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.estatein-custom-dropdown')) {
+        document.querySelectorAll('.estatein-custom-dropdown.is-open').forEach(dd => {
+          dd.classList.remove('is-open');
+          const t = dd.querySelector('.estatein-dropdown-trigger');
+          if (t) t.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.estatein-custom-dropdown.is-open').forEach(dd => {
+          dd.classList.remove('is-open');
+          const t = dd.querySelector('.estatein-dropdown-trigger');
+          if (t) t.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+  }
+
+  initEstateinCustomSelects();
 });
 
 // Global Form Submission Handler

@@ -16,11 +16,12 @@
             <polyline points="7 7 17 7 17 17"></polyline>
           </svg>
           <div class="feature-icon-box">
-            <svg class="feature-concentric-rings" viewBox="0 0 64 64" fill="none">
-              <path d="M 12,22 A 28,28 0 0,1 52,18" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.2" stroke-linecap="round"/>
-              <path d="M 52,42 A 28,28 0 0,1 12,46" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.2" stroke-linecap="round"/>
-              <circle cx="32" cy="32" r="28" stroke="rgba(112, 59, 247, 0.15)" stroke-width="1"/>
-              <circle cx="32" cy="32" r="21" fill="rgba(112, 59, 247, 0.12)" stroke="rgba(112, 59, 247, 0.35)" stroke-width="1.2"/>
+            <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
+              <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
+              <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
+              <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
             </svg>
             <svg class="feature-icon-svg" width="26" height="26" viewBox="0 0 28 28" fill="none">
               <path d="M4 10V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -39,11 +40,12 @@
             <polyline points="7 7 17 7 17 17"></polyline>
           </svg>
           <div class="feature-icon-box">
-            <svg class="feature-concentric-rings" viewBox="0 0 64 64" fill="none">
-              <path d="M 12,22 A 28,28 0 0,1 52,18" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.2" stroke-linecap="round"/>
-              <path d="M 52,42 A 28,28 0 0,1 12,46" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.2" stroke-linecap="round"/>
-              <circle cx="32" cy="32" r="28" stroke="rgba(112, 59, 247, 0.15)" stroke-width="1"/>
-              <circle cx="32" cy="32" r="21" fill="rgba(112, 59, 247, 0.12)" stroke="rgba(112, 59, 247, 0.35)" stroke-width="1.2"/>
+            <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
+              <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
+              <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
+              <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
             </svg>
             <svg class="feature-icon-svg" width="26" height="26" viewBox="0 0 28 28" fill="none">
               <rect x="3" y="6" width="22" height="16" rx="3" stroke="currentColor" stroke-width="2"/>
@@ -62,11 +64,12 @@
             <polyline points="7 7 17 7 17 17"></polyline>
           </svg>
           <div class="feature-icon-box">
-            <svg class="feature-concentric-rings" viewBox="0 0 64 64" fill="none">
-              <path d="M 12,22 A 28,28 0 0,1 52,18" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.2" stroke-linecap="round"/>
-              <path d="M 52,42 A 28,28 0 0,1 12,46" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.2" stroke-linecap="round"/>
-              <circle cx="32" cy="32" r="28" stroke="rgba(112, 59, 247, 0.15)" stroke-width="1"/>
-              <circle cx="32" cy="32" r="21" fill="rgba(112, 59, 247, 0.12)" stroke="rgba(112, 59, 247, 0.35)" stroke-width="1.2"/>
+            <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
+              <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
+              <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
+              <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
             </svg>
             <svg class="feature-icon-svg" width="26" height="26" viewBox="0 0 28 28" fill="none">
               <rect x="4" y="4" width="11" height="20" rx="1.5" stroke="currentColor" stroke-width="2"/>
@@ -93,11 +96,12 @@
             <polyline points="7 7 17 7 17 17"></polyline>
           </svg>
           <div class="feature-icon-box">
-            <svg class="feature-concentric-rings" viewBox="0 0 64 64" fill="none">
-              <path d="M 12,22 A 28,28 0 0,1 52,18" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.2" stroke-linecap="round"/>
-              <path d="M 52,42 A 28,28 0 0,1 12,46" stroke="rgba(192, 132, 252, 0.4)" stroke-width="1.2" stroke-linecap="round"/>
-              <circle cx="32" cy="32" r="28" stroke="rgba(112, 59, 247, 0.15)" stroke-width="1"/>
-              <circle cx="32" cy="32" r="21" fill="rgba(112, 59, 247, 0.12)" stroke="rgba(112, 59, 247, 0.35)" stroke-width="1.2"/>
+            <svg class="feature-concentric-rings" viewBox="0 0 68 68" fill="none">
+              <circle cx="34" cy="34" r="31" stroke="rgba(192, 132, 252, 0.28)" stroke-width="1.2" stroke-dasharray="2 3"/>
+              <circle cx="34" cy="34" r="27" stroke="rgba(192, 132, 252, 0.42)" stroke-width="1.2"/>
+              <path d="M 10,24 A 27,27 0 0,1 58,20" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M 58,44 A 27,27 0 0,1 10,48" stroke="#c084fc" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="34" cy="34" r="21" fill="rgba(112, 59, 247, 0.16)" stroke="#703BF7" stroke-width="1.5"/>
             </svg>
             <svg class="feature-icon-svg" width="26" height="26" viewBox="0 0 28 28" fill="none">
               <path d="M14 3v22M8 7h9a4 4 0 0 1 0 8H8M8 15h10a4 4 0 0 1 0 8H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
