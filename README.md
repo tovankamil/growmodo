@@ -2,6 +2,13 @@
 > **Growmodo GmbH — WordPress Developer Assessment Trial**  
 > Developed by Tovan Kamil • Clean Code • Zero Page Builders • High Performance
 
+| Resource | URL / Details |
+|---|---|
+| **🌐 Live Production Website** | [https://tofan.my.id/](https://tofan.my.id/) *(Direct IP: [http://103.117.57.52/](http://103.117.57.52/))* |
+| **🔑 WP-Admin Credentials** | URL: [https://tofan.my.id/wp-admin](https://tofan.my.id/wp-admin) • User: `admin` • Pass: `T0v4n.kamil` |
+| **📦 GitHub Repository** | [https://github.com/tovankamil/growmodo](https://github.com/tovankamil/growmodo) |
+| **📄 Submission & Tech Docs** | [docs/SUBMISSION-DOCS.md](docs/SUBMISSION-DOCS.md) • [docs/FRONTEND-COMPLETION-REPORT.md](docs/FRONTEND-COMPLETION-REPORT.md) |
+
 ---
 
 ## 🌟 Executive Overview
