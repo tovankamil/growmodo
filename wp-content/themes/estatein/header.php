@@ -60,7 +60,7 @@
           <ul class="nav-menu" id="navMenu">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="nav-link <?php echo is_front_page() ? 'active' : ''; ?>"><?php esc_html_e( 'Home', 'estatein' ); ?></a></li>
             <li><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="nav-link <?php echo ( is_page( array( 'about', 'about-us' ) ) || is_page_template( 'template-about.php' ) ) ? 'active' : ''; ?>"><?php esc_html_e( 'About Us', 'estatein' ); ?></a></li>
-            <li><a href="<?php echo esc_url( home_url( '/properties/' ) ); ?>" class="nav-link <?php echo ( is_page( 'properties' ) || is_page_template( 'template-properties.php' ) || is_singular( 'estatein_property' ) ) ? 'active' : ''; ?>"><?php esc_html_e( 'Properties', 'estatein' ); ?></a></li>
+            <li><a href="<?php echo esc_url( home_url( '/properties/' ) ); ?>" class="nav-link <?php echo ( is_page( 'properties' ) || is_page_template( 'template-properties.php' ) || is_singular( 'estatein_property' ) || is_post_type_archive( 'estatein_property' ) ) ? 'active' : ''; ?>"><?php esc_html_e( 'Properties', 'estatein' ); ?></a></li>
             <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>" class="nav-link <?php echo ( is_page( 'services' ) || is_page_template( 'template-services.php' ) ) ? 'active' : ''; ?>"><?php esc_html_e( 'Services', 'estatein' ); ?></a></li>
             <li class="mobile-only-nav-item"><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary btn-full"><?php esc_html_e( 'Contact Us', 'estatein' ); ?></a></li>
           </ul>
