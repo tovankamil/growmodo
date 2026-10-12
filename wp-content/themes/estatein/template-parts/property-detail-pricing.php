@@ -41,7 +41,7 @@
       <div class="pricing-group-card">
         <div class="pricing-group-header">
           <h3 class="pricing-group-title"><?php esc_html_e( 'Additional Fees', 'estatein' ); ?></h3>
-          <button type="button" class="btn btn-secondary btn-sm"><?php esc_html_e( 'Learn More', 'estatein' ); ?></button>
+          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-secondary btn-sm"><?php esc_html_e( 'Learn More', 'estatein' ); ?></a>
         </div>
         <div class="pricing-group-grid">
           <div class="pricing-fee-item">
@@ -86,7 +86,7 @@
       <div class="pricing-group-card">
         <div class="pricing-group-header">
           <h3 class="pricing-group-title"><?php esc_html_e( 'Monthly Costs', 'estatein' ); ?></h3>
-          <button type="button" class="btn btn-secondary btn-sm"><?php esc_html_e( 'Learn More', 'estatein' ); ?></button>
+          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-secondary btn-sm"><?php esc_html_e( 'Learn More', 'estatein' ); ?></a>
         </div>
         <div class="pricing-group-grid">
           <div class="pricing-fee-item">
@@ -124,7 +124,7 @@
       <div class="pricing-group-card">
         <div class="pricing-group-header">
           <h3 class="pricing-group-title"><?php esc_html_e( 'Total Initial Costs', 'estatein' ); ?></h3>
-          <button type="button" class="btn btn-secondary btn-sm"><?php esc_html_e( 'Learn More', 'estatein' ); ?></button>
+          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-secondary btn-sm"><?php esc_html_e( 'Learn More', 'estatein' ); ?></a>
         </div>
         <div class="pricing-group-grid">
           <div class="pricing-fee-item">

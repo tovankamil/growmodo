@@ -21,7 +21,7 @@
     <div class="container">
       <div class="top-banner-inner">
         <span>✨ <?php esc_html_e( 'Discover Your Dream Property with Estatein', 'estatein' ); ?></span>
-        <a href="#about" class="top-banner-link"><?php esc_html_e( 'Learn More', 'estatein' ); ?></a>
+        <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="top-banner-link"><?php esc_html_e( 'Learn More', 'estatein' ); ?></a>
       </div>
       <button class="top-banner-close" id="bannerCloseBtn" aria-label="<?php esc_attr_e( 'Close Announcement Banner', 'estatein' ); ?>">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">

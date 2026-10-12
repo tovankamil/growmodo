@@ -16,8 +16,8 @@
         </p>
         
         <div class="hero-buttons">
-          <a href="#about" class="btn btn-secondary"><?php esc_html_e( 'Learn More', 'estatein' ); ?></a>
-          <a href="#properties" class="btn btn-primary"><?php esc_html_e( 'Browse Properties', 'estatein' ); ?></a>
+          <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="btn btn-secondary"><?php esc_html_e( 'Learn More', 'estatein' ); ?></a>
+          <a href="<?php echo esc_url( home_url( '/properties/' ) ); ?>" class="btn btn-primary"><?php esc_html_e( 'Browse Properties', 'estatein' ); ?></a>
         </div>
 
         <div class="hero-stats">
