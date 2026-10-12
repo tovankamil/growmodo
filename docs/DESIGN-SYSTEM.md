@@ -62,7 +62,7 @@
 | 600 | SemiBold | Section titles, card headings |
 | 700 | Bold | Hero title, stat numbers |
 
-### Font Size Scale (dari HTML export)
+### Font Size Scale (from HTML export)
 | Token | Size | Line Height | Usage |
 |-------|------|-------------|-------|
 | `text-lg` | 18px | 27px | Body text, buttons, nav links |
@@ -156,7 +156,7 @@
 
 ---
 
-## 📐 Spacing & Layout (dari HTML export)
+## 📐 Spacing & Layout (from HTML export)
 
 ### Container
 - **Max Width:** 1920px (full design)
@@ -215,7 +215,7 @@ Icon + Text (18px Medium white)
 
 ---
 
-## 📱 Responsive Breakpoints (dari Figma)
+## 📱 Responsive Breakpoints (from Figma)
 
 | Device | Width | Folder |
 |--------|-------|--------|

@@ -1,68 +1,68 @@
-# 🚀 Panduan Setup CI/CD GitHub Actions ke VPS
+# 🚀 GitHub Actions CI/CD to VPS Setup Guide
 
-Alur CI/CD ini menggunakan **GitHub Actions** untuk mendeploy tema WordPress `estatein` secara otomatis setiap kali Anda melakukan `git push` ke branch `main`.
+This CI/CD pipeline uses **GitHub Actions** to automatically deploy the `estatein` WordPress theme every time you push to the `main` branch.
 
 ---
 
-## 1. Persiapan SSH Key di VPS
+## 1. SSH Key Preparation on VPS
 
-Jalankan perintah berikut di terminal VPS Anda (sebagai user `root` atau `ubuntu`):
+Run the following commands in your VPS terminal (as user `root` or `ubuntu`):
 
-### Langkah 1: Buat SSH Key khusus GitHub Actions
+### Step 1: Generate a Dedicated SSH Key for GitHub Actions
 ```bash
-# Jalankan di terminal VPS:
+# Run in VPS terminal:
 ssh-keygen -t ed25519 -C "github-actions-deploy" -f ~/.ssh/github_deploy -N ""
 ```
 
-### Langkah 2: Daftarkan Public Key ke `authorized_keys`
+### Step 2: Register Public Key to `authorized_keys`
 ```bash
 cat ~/.ssh/github_deploy.pub >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 ```
 
-### Langkah 3: Ambil Private Key untuk dimasukkan ke GitHub
+### Step 3: Copy Private Key for GitHub
 ```bash
 cat ~/.ssh/github_deploy
 ```
-*Salin seluruh teks yang keluar, mulai dari `-----BEGIN OPENSSH PRIVATE KEY-----` sampai `-----END OPENSSH PRIVATE KEY-----`.*
+*Copy the entire output, starting from `-----BEGIN OPENSSH PRIVATE KEY-----` to `-----END OPENSSH PRIVATE KEY-----`.*
 
 ---
 
-## 2. Daftarkan Secrets di GitHub Repository
+## 2. Register Secrets in GitHub Repository
 
-1. Buka repository Anda di GitHub: `https://github.com/[username]/[repo]`
-2. Masuk ke menu **Settings** > **Secrets and variables** > **Actions**.
-3. Klik tombol **New repository secret** dan tambahkan 5 secret berikut:
+1. Open your repository on GitHub: `https://github.com/[username]/[repo]`
+2. Go to **Settings** > **Secrets and variables** > **Actions**.
+3. Click **New repository secret** and add the following 5 secrets:
 
-| Nama Secret | Nilai / Contoh | Keterangan |
-|-------------|----------------|------------|
-| `VPS_HOST` | `123.45.67.89` atau `domainanda.com` | IP atau Host VPS Anda |
-| `VPS_PORT` | `22` | Port SSH (default 22) |
-| `VPS_USERNAME` | `root` atau `ubuntu` | User login SSH VPS |
-| `VPS_SSH_KEY` | *(Teks private key dari Langkah 3)* | Private Key untuk autentikasi SSH |
-| `VPS_TARGET_DIR` | `/var/www/html/wp-content/themes/estatein` | Path lokasi tema di VPS |
+| Secret Name | Example / Value | Description |
+|-------------|----------------|-------------|
+| `VPS_HOST` | `103.117.57.52` or `yourdomain.com` | IP or Host of your VPS |
+| `VPS_PORT` | `22` | SSH Port (default 22) |
+| `VPS_USERNAME` | `root` or `tovan` | SSH login user on VPS |
+| `VPS_SSH_KEY` | *(Private key text from Step 3)* | Private Key for SSH authentication |
+| `VPS_TARGET_DIR` | `/var/www/tofan.my.id/public_html/wp-content/themes/estatein` | Theme directory path on VPS |
 
-> 💡 **Catatan untuk VPS Control Panel:**
-> - Jika menggunakan **aaPanel**: path biasanya `/www/wwwroot/[domain]/wp-content/themes/estatein`
-> - Jika menggunakan **CyberPanel**: path biasanya `/home/[domain]/public_html/wp-content/themes/estatein`
-> - Jika menggunakan **Nginx/Apache Ubuntu standar**: path biasanya `/var/www/html/wp-content/themes/estatein`
-
----
-
-## 3. Cara Kerja Pipeline CI/CD (`.github/workflows/deploy.yml`)
-
-1. **Trigger:** Otomatis berjalan setiap ada commit di-push ke branch `main`, atau bisa dijalankan manual via tombol *"Run workflow"* di tab **Actions**.
-2. **Checkout:** Mengambil file tema dari `wp-content/themes/estatein/`.
-3. **Filter Keamanan:** Otomatis mengecualikan folder prototype `html/`, folder `docs/`, dan file `.git*`.
-4. **Rsync:** Mengirim file dengan cepat dan efisien via SSH ke folder tema di VPS.
-5. **Permissions:** Mengatur hak akses file menjadi `755` (folder) dan `644` (file) serta kepemilikan `www-data`.
-6. **Cache Flush:** Otomatis membersihkan cache WordPress jika WP-CLI terpasang di VPS.
+> 💡 **Notes for VPS Control Panels:**
+> - If using **aaPanel**: path is typically `/www/wwwroot/[domain]/wp-content/themes/estatein`
+> - If using **CyberPanel**: path is typically `/home/[domain]/public_html/wp-content/themes/estatein`
+> - If using **Standard Ubuntu Nginx/Apache**: path is typically `/var/www/html/wp-content/themes/estatein`
 
 ---
 
-## 4. Testing Deploy Pertama Kali
-Setelah Anda memasukkan 5 secret di atas ke GitHub:
-1. Kita akan commit tema WordPress pertama ke branch `main`.
-2. Buka tab **Actions** di GitHub repository Anda.
-3. Anda akan melihat workflow **Deploy Estatein WordPress Theme to VPS** berjalan dan statusnya berubah menjadi hijau (✅ Berhasil).
+## 3. How the CI/CD Pipeline Works (`.github/workflows/deploy.yml`)
+
+1. **Trigger:** Runs automatically on every push to the `main` branch, or can be triggered manually via the *"Run workflow"* button in the **Actions** tab.
+2. **Checkout:** Checks out theme files from `wp-content/themes/estatein/`.
+3. **Security Filter:** Automatically excludes the prototype `html/` folder, `docs/` folder, and `.git*` files.
+4. **Rsync:** Transfers files quickly and efficiently via SSH to the theme directory on the VPS.
+5. **Permissions:** Sets permissions to `755` (directories) and `644` (files) with `www-data` ownership.
+6. **Cache Flush:** Automatically flushes WordPress cache if WP-CLI is installed on the VPS.
+
+---
+
+## 4. Testing First Deployment
+After adding the 5 secrets above to GitHub:
+1. Commit changes to the `main` branch and push.
+2. Open the **Actions** tab in your GitHub repository.
+3. You will see the workflow **Deploy Estatein WordPress Theme to VPS** running and turning green (✅ Success).
